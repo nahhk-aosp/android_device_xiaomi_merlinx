@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayMerlinx \
     SystemUIOverlayMerlinx
 
+# Kernel - prebuilt 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/dtb.img:$(TARGET_COPY_OUT)/dtb.img 
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.project.rc
